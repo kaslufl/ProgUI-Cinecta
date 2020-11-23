@@ -1,10 +1,11 @@
 body{
     margin: 0px;
+    padding: 0px;
     background-color: #e0ece4;
     display: grid;
-    grid-template-areas: "header header header" "left content right" "footer footer footer";
-    grid-template-columns: 20vh auto 20vh;
-    grid-template-rows: 20vh 80vh 20vh;
+    grid-template-areas: "header header header" "content content aside" "footer footer footer";
+    grid-template-columns: 20vh auto 40vh;
+    grid-template-rows: 20vh 120vh 35vh;
 }
 
 body header{
@@ -37,19 +38,38 @@ body header nav ul{
 body article{
     background-color: #e0ece4;
     grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 body aside{
     background-color: #056674;
 }
-aside.left{
-    grid-area: left;
-}
 
-aside.right{
-    grid-area: right;
+aside{
+    grid-area: aside;
 }
 body footer{
     background-color: #66bfbf;
     grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+body footer ul{
+    list-style-type: none;
+    display: grid;
+
+}
+
+body footer section{
+    display:grid;
+    grid-template-areas: "links" "contact";
+}
+body footer section a{
+    grid-area: links;
+}
+
+body footer section button{
+    grid-area: contact;
 }
