@@ -73,3 +73,19 @@ body footer section a{
 body footer section button{
     grid-area: contact;
 }
+
+@media screen and (max-width:768px){
+    body{
+        grid-template-areas: "header" "content" "aside" "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 40vh 140vh 30vh 50vh;
+    }
+}
+
+@media screen and (max-width:992px){
+    
+}
+
+@media screen and (max-width:1200px){
+    
+}
