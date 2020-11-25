@@ -42,13 +42,20 @@ body article{
     grid-template-rows: repeat(2, 1fr);
 }
 
-body aside{
-    background-color: #056674;
+body article section{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-aside{
+body aside{
+    background-color: #056674;
     grid-area: aside;
 }
+
 body footer{
     background-color: #66bfbf;
     grid-area: footer;
